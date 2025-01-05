@@ -1,16 +1,15 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFile } from "react-icons/fa";
+
 function Sidebar() {
   const navLinks = [
     {name: "Projects", link: '#projects'},
     {name: "Experience", link: '#experience'},
   ];
 
-  const socialLinks = [{link: 'https://github.com/jt177828', icon: '<i class="devicon-github-original"></i>'},
-                      {link: 'https://www.linkedin.com/in/justintian72/', icon: '<i class="devicon-github-original"></i>'},
-                      {link: 'https://github.com/jt177828', icon: '<i class="devicon-github-original"></i>'},
-  ];
-
   return (
-    <div className="flex flex-col h-screen w-1/5 top-0 left-0 border border-gray-700 px-9 py-24">
+    <div className="flex flex-col h-screen w-100 top-0 left-0 border border-gray-700 px-9 py-24">
       {/* Hero */}
       <div className="flex-none">
         <ul className="space-y-2">
@@ -31,13 +30,23 @@ function Sidebar() {
       </div>
 
       {/* Github, linkedin, resume */}
-      <div className="flex-none">
-        <ul className="space-y-4">
-          {socialLinks.map((item) => (
-            <li key={item}>
-              <a className="hover:text-sky-400 transition-colors cursor-pointer">{item}</a>
-            </li>
-          ))}
+      <div className="flex">
+        <ul className="gap-14 text-5xl flex">
+          <li>
+            <a href='https://github.com/jt177828' target='blank'>
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/justintian72/' target='blank'>
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href='/assets/course-notes.pdf' target='blank'>
+              <FaFile />
+            </a>
+          </li>
         </ul>
       </div>
     </div>

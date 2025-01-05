@@ -1,6 +1,6 @@
 import Education from './Education'
 import TechStack from './TechStack';
-import Projects from './Projects';
+import Projects from './Projects/Projects'
 
 function Container() {
     return (

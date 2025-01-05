@@ -7,7 +7,7 @@ import Container from './components/container/Container';
 
 function App() {
   return (
-    <div className="bg-background text-text flex font-ibm">
+    <div className="bg-background text-text flex font-ibm overflow-y-hidden">
       <Sidebar></Sidebar>
 
       <Container></Container>

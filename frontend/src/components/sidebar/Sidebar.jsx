@@ -9,7 +9,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="flex flex-col h-screen w-100 top-0 left-0 border border-gray-700 px-9 py-24">
+    <div className="flex flex-col w-96 top-0 left-0 h-screen fixed border-r-2 border-gray-700 px-7 py-12">
       {/* Hero */}
       <div className="flex-none">
         <ul className="space-y-2">
@@ -20,7 +20,7 @@ function Sidebar() {
 
       {/* Nav links */}
       <div className="flex-1 flex items-center">
-        <ul className="space-y-2">
+        <ul className="space-y-16">
           {navLinks.map((item) => (
             <li className="text-3xl" key={item}>
               <a href={item.link} className="hover:text-sky-400 transition-colors cursor-pointer">{item.name}</a>
@@ -31,20 +31,20 @@ function Sidebar() {
 
       {/* Github, linkedin, resume */}
       <div className="flex">
-        <ul className="gap-14 text-5xl flex">
-          <li>
-            <a href='https://github.com/jt177828' target='blank'>
+        <ul className="gap-14 text-3xl flex">
+          <li classname='hover:scale-x-110'>
+            <a href='https://github.com/jt177828' target='blank' className='hover:rotate-45'>
               <FaGithub />
             </a>
           </li>
-          <li>
+          <li classname='hover:scale-x-110'>
             <a href='https://www.linkedin.com/in/justintian72/' target='blank'>
               <FaLinkedin />
             </a>
           </li>
           <li>
             <a href='/assets/course-notes.pdf' target='blank'>
-              <FaFile />
+              <FaFile classname='hover:rotate-1'/>
             </a>
           </li>
         </ul>

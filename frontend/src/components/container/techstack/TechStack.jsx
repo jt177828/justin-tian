@@ -30,16 +30,16 @@ function TechStack() {
     const TechStackItems = (techStackItems) => {
         return (
             <div className="text-3xl p-2 space-y-6">
-            <ul className='gap-4 flex'>
-                {techStackItems.map((item) =>
-                    <li key={item.name}>
-                        <div className='w-fit border-2 hover:border-slate-500 py-2 px-4 rounded-xl text-lg font-semibold text-slate-500 hover:text-slate-300 transition-colors duration-100 flex flex-row items-center gap-4 group'>
-                        {item.icon}
-                        {item.name}
-                        </div> 
-                    </li>
-                )}
-            </ul>  
+                <ul className='gap-4 flex'>
+                    {techStackItems.map((item) =>
+                        <li key={item.name}>
+                            <div className='w-fit border-2 hover:border-slate-500 py-2 px-2 rounded-xl text-lg font-semibold text-slate-500 hover:text-slate-300 transition-colors duration-100 flex flex-row items-center gap-4 group'>
+                            {item.icon}
+                            {item.name}
+                            </div> 
+                        </li>
+                    )}
+                </ul>  
             </div> 
         );
     }
@@ -48,15 +48,15 @@ function TechStack() {
         <div className='px-6 py-14'>
 
             <div className="mb-8">
-                <h1 className='font-semibold text-xl'>Languages:</h1>
+                <h1 className='text-xl pb-3'>Languages:</h1>
                 {TechStackItems(languageList)}
             </div>
             <div className="mb-8">
-                <h1 className='font-semibold text-xl'>Frameworks/Libraries:</h1>
+                <h1 className='text-xl pb-3'>Frameworks/Libraries:</h1>
                 {TechStackItems(frameworksLibraries)}
             </div>
             <div>
-                <h1 className='font-semibold text-xl'>Developer Tools:</h1>
+                <h1 className='text-xl pb-3'>Developer Tools:</h1>
                 {TechStackItems(devTools)}
             </div>
         </div>

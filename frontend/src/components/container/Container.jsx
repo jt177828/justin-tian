@@ -4,7 +4,7 @@ import Projects from './Projects/Projects'
 
 function Container() {
     return (
-        <div className="flex flex-col ml-96 top-0 left-96 right-auto px-20 py-14">
+        <div className="flex-1 ml-0 md:ml-96 px-4 md:px-20 py-14 h-screen overflow-y-auto">
             <h1 className="text-3xl font-bold">Education</h1>
             <Education></Education>
 

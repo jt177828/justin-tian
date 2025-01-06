@@ -9,7 +9,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="flex flex-col w-96 top-0 left-0 h-screen fixed border-r-2 border-gray-700 px-7 py-12">
+    <div className="hidden md:flex flex-col w-full md:w-96 top-0 left-0 h-screen fixed border-r-2 border-gray-700 px-4 md:px-7 py-12">
       {/* Hero */}
       <div className="flex-none">
         <ul className="space-y-2">

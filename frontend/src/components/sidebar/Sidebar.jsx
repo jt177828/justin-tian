@@ -12,10 +12,14 @@ function Sidebar() {
     <div className="hidden md:flex flex-col w-full md:w-72 top-0 left-0 h-screen fixed border-r-2 border-gray-700 px-4 md:px-7 py-12">
       {/* Hero */}
       <div className="flex-none">
-        <ul className="space-y-2">
-          <li><a><h1 className="font-bold text-5xl">Justin Tian</h1></a></li>
-          <li><a><h5 className="font-bold text-alt text-3xl">Math @ UWaterloo</h5></a></li>
-        </ul>
+
+        <a href="#education" className='hover:text-sky-400 transition-colors cursor-pointer'>
+          <ul className="space-y-2">
+            <li><a><h1 className="font-bold text-5xl">Justin Tian</h1></a></li>
+            <li><a><h5 className="font-bold text-alt text-3xl">Math @ UWaterloo</h5></a></li>
+          </ul>
+        </a>
+
       </div>
 
       {/* Nav links */}
@@ -32,19 +36,19 @@ function Sidebar() {
       {/* Github, linkedin, resume */}
       <div className="flex">
         <ul className="gap-14 text-3xl flex">
-          <li classname='hover:scale-x-110'>
-            <a href='https://github.com/jt177828' target='blank' className='hover:rotate-45'>
+          <li>
+            <a href='https://github.com/jt177828' target='blank' className="hover:text-sky-400 transition-colors cursor-pointer">
               <FaGithub />
             </a>
           </li>
-          <li classname='hover:scale-x-110'>
-            <a href='https://www.linkedin.com/in/justintian72/' target='blank'>
+          <li>
+            <a href='https://www.linkedin.com/in/justintian72/' target='blank' className="hover:text-sky-400 transition-colors cursor-pointer">
               <FaLinkedin />
             </a>
           </li>
           <li>
-            <a href='/assets/course-notes.pdf' target='blank'>
-              <FaFile classname='hover:rotate-1'/>
+            <a href='/assets/course-notes.pdf' target='blank' className="hover:text-sky-400 transition-colors cursor-pointer">
+              <FaFile/>
             </a>
           </li>
         </ul>

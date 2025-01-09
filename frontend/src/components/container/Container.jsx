@@ -8,7 +8,7 @@ function Container() {
             <h1 id='education' className="text-3xl font-semibold">Education</h1>
             <Education></Education>
 
-            <h1 className="text-3xl font-semibold">Tech Stack</h1>
+            <h1 className="text-3xl font-semibold">Skills</h1>
             <TechStack />
 
             <h1 id="projects" className="text-3xl font-semibold">Projects</h1>

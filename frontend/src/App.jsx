@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -11,6 +12,7 @@ function App() {
       <Sidebar></Sidebar>
 
       <Container></Container>
+      <SpeedInsights/>
     </div>
   );
 }
